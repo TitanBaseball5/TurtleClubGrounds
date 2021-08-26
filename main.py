@@ -14,77 +14,80 @@ from colorama import Fore, Back, Style
 app = Flask(__name__)
 
 def league_organizer(diamondEvents, diamondMound, diamondBase):
-	listCounter2 = 0
-	for x in range(len(diamondEvents)):
-		if "LittleTurtles" in diamondEvents[listCounter2]:
-			diamondMound.append("50 ft")
-			diamondBase.append("60 ft with Safety Bag")
-		elif "SeniorT-Ball" in diamondEvents[
-		    listCounter2] or "JuniorT-Ball" in diamondEvents[listCounter2]:
-			diamondMound.append("50 ft")
-			diamondBase.append("60 ft")
-		elif "Rookie" in diamondEvents[listCounter2]:
-			diamondMound.append("44 ft with circle 8ft")
-			diamondBase.append("65 ft")
-		elif "Mosquito" in diamondEvents[listCounter2]:
-			diamondMound.append("44 ft")
-			diamondBase.append("65 ft")
-		elif "PeeWee" in diamondEvents[listCounter2]:
-			diamondMound.append("50 ft")
-			diamondBase.append("75 ft")
-		elif "Jr.Softball" in diamondEvents[listCounter2]:
-			diamondMound.append("30 ft")
-			diamondBase.append("45 ft SB")
-		elif "Sr.Softball" in diamondEvents[listCounter2]:
-			diamondMound.append("35 ft")
-			diamondBase.append("55 ft SB")
-		elif "AthleticsU10" in diamondEvents[listCounter2]:
-			diamondMound.append("35 ft")
-			diamondBase.append("50 ft SB")
-		elif "AthleticsU12" in diamondEvents[listCounter2]:
-			diamondMound.append("38 ft")
-			diamondBase.append("60 ft SB")
-		elif "AthleticsU14" in diamondEvents[listCounter2]:
-			diamondMound.append("38 ft")
-			diamondBase.append("60 ft SB")
-		elif "AthleticsU16" in diamondEvents[listCounter2]:
-			diamondMound.append("40 ft")
-			diamondBase.append("60  SBft")
-		elif "AthleticsU19" in diamondEvents[listCounter2]:
-			diamondMound.append("43 ft")
-			diamondBase.append("60 ft SB")
-		elif "Titans8U" in diamondEvents[listCounter2]:
-			diamondMound.append("44 ft with circle 8ft")
-			diamondBase.append("65 ft")
-		elif "Titans9U" in diamondEvents[listCounter2]:
-			diamondMound.append("44 ft with circle 8ft")
-			diamondBase.append("65 ft")
-		elif "Titans10U" in diamondEvents[listCounter2]:
-			diamondMound.append("44 ft")
-			diamondBase.append("65 ft")
-		elif "Titans11U" in diamondEvents[listCounter2]:
-			diamondMound.append("44 ft")
-			diamondBase.append("65 ft")
-		elif "Titans12U" in diamondEvents[listCounter2]:
-			diamondMound.append("50 ft")
-			diamondBase.append("75 ft")
-		elif "Titans13U" in diamondEvents[listCounter2]:
-			diamondMound.append("50 ft")
-			diamondBase.append("75 ft")
-		elif "Titans14U" in diamondEvents[listCounter2]:
-			diamondMound.append("60 ft")
-			diamondBase.append("90 ft")
-		elif "Titans15U" in diamondEvents[listCounter2]:
-			diamondMound.append("60 ft")
-			diamondBase.append("90 ft")
-		elif "Titans16U" in diamondEvents[listCounter2]:
-			diamondMound.append("60-1/2 ft")
-			diamondBase.append("90 ft")
-		elif "Titans17U/18U" in diamondEvents[listCounter2]:
-			diamondMound.append("60-1/2 ft")
-			diamondBase.append("90 ft")
-		listCounter2 = listCounter2 + 1
-	return diamondMound, diamondBase
+    listCounter2 = 0
+    for x in range(len(diamondEvents)):
+        if "LittleTurtles" in diamondEvents[listCounter2]:
+            diamondMound.append("50 ft")
+            diamondBase.append("60 ft with Safety Bag")
+        elif "SeniorT-Ball" in diamondEvents[listCounter2] or "JuniorT-Ball" in diamondEvents[listCounter2]:
+            diamondMound.append("50 ft")
+            diamondBase.append("60 ft")
+        elif "Rookie" in diamondEvents[listCounter2]:
+            diamondMound.append("44 ft with circle 8ft")
+            diamondBase.append("65 ft")
+        elif "Mosquito" in diamondEvents[listCounter2]:
+            diamondMound.append("44 ft")
+            diamondBase.append("65 ft")
+        elif "PeeWee" in diamondEvents[listCounter2]:
+            diamondMound.append("50 ft")
+            diamondBase.append("75 ft")
+        elif "Jr.Softball" in diamondEvents[listCounter2]:
+            diamondMound.append("30 ft")
+            diamondBase.append("45 ft SB")
+        elif "Sr.Softball" in diamondEvents[listCounter2]:
+            diamondMound.append("35 ft")
+            diamondBase.append("55 ft SB")
+        elif "AthleticsU10" in diamondEvents[listCounter2]:
+            diamondMound.append("35 ft")
+            diamondBase.append("50 ft SB")
+        elif "AthleticsU12" in diamondEvents[listCounter2]:
+            diamondMound.append("38 ft")
+            diamondBase.append("60 ft SB")
+        elif "AthleticsU14" in diamondEvents[listCounter2]:
+            diamondMound.append("38 ft")
+            diamondBase.append("60 ft SB")
+        elif "AthleticsU16" in diamondEvents[listCounter2]:
+            diamondMound.append("40 ft")
+            diamondBase.append("60  SBft")
+        elif "AthleticsU19" in diamondEvents[listCounter2]:
+            diamondMound.append("43 ft")
+            diamondBase.append("60 ft SB")
+        elif "Titans8U" in diamondEvents[listCounter2]:
+            diamondMound.append("44 ft with circle 8ft")
+            diamondBase.append("65 ft")
+        elif "Titans9U" in diamondEvents[listCounter2]:
+            diamondMound.append("44 ft with circle 8ft")
+            diamondBase.append("65 ft")
+        elif "Titans10U" in diamondEvents[listCounter2]:
+            diamondMound.append("44 ft")
+            diamondBase.append("65 ft")
+        elif "Titans11U" in diamondEvents[listCounter2]:
+            diamondMound.append("44 ft")
+            diamondBase.append("65 ft")
+        elif "Titans12U" in diamondEvents[listCounter2]:
+            diamondMound.append("50 ft")
+            diamondBase.append("75 ft")
+        elif "Titans13U" in diamondEvents[listCounter2]:
+            diamondMound.append("50 ft")
+            diamondBase.append("75 ft")
+        elif "Titans14U" in diamondEvents[listCounter2]:
+            diamondMound.append("60 ft")
+            diamondBase.append("90 ft")
+        elif "Titans15U" in diamondEvents[listCounter2]:
+            diamondMound.append("60 ft")
+            diamondBase.append("90 ft")
+        elif "Titans16U" in diamondEvents[listCounter2]:
+            diamondMound.append("60-1/2 ft")
+            diamondBase.append("90 ft")
+        elif "Titans17U/18U" in diamondEvents[listCounter2]:
+            diamondMound.append("60-1/2 ft")
+            diamondBase.append("90 ft")
+        elif "Umpires" in diamondEvents[listCounter2]:
+            diamondMound.append(" ")
+            diamondBase.append(" ")
+
+        listCounter2 = listCounter2 + 1
+    return diamondMound, diamondBase
 
 
 def day_adjuster(diamondCounter, stringOfEvents, rWselectiveColoum):
@@ -318,6 +321,18 @@ def practice_lower(diamondEvents):
         counter = counter +1
     return newList
 
+def intermitten_data_picker(dataPicker,coloumsOfData,rotations):
+    comp = len(coloumsOfData[dataPicker+rotations].text)
+    if comp > 500 :
+        return dataPicker
+    else:
+        while True:
+            dataPicker = dataPicker+1
+            comp = len(coloumsOfData[dataPicker+rotations].text)
+            if comp > 500:
+                return dataPicker
+
+
 #Variables
 diamondCounter = 0
 listOfTEvents = []
@@ -415,140 +430,182 @@ stringOfEvents = soup.find_all('div', attrs={'class': 'calItem'})
 #Coloums of Data in each calaendar coloum
 coloumsOfData = soup.find_all('td', attrs={})
 
+
+
 selectiveColoum = str(coloumsOfData[17].text)
 rWselectiveColoum = selectiveColoum.replace(" ", "")
 
 
 
+
+dataPicker = 1
+if len(coloumsOfData[17].text) > 1000:
+    dataPicker = 17
+    
+else:
+    while True:
+        
+        comp = coloumsOfData[17+dataPicker].text
+        if len(comp) > 1000 and "Turtle Club" in comp and "Diamond" in comp :
+            break
+        
+        dataPicker = dataPicker+1
+        
+dataPicker = dataPicker + 17 
+
+
 #MAKE SURE TO AUTOMATE THE PROCESS OF COLOUM PICKING
 if day_name[day] == "Monday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
     preDiamondOneEvents, preDiamondTwoEvents, preDiamondThreeEvents, preDiamondFourEvents, preDiamondFiveEvents, preDiamondSixEvents, preDiamondSevenEvents, preVDiamondOneEvents, preVDiamondTwoEvents = preList_DiamondOrganizer(preList)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
+
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
     
+    
 
 elif day_name[day] == "Tuesday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
-    selectiveColoum = str(coloumsOfData[19].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,2)
+    selectiveColoum = str(coloumsOfData[dataPicker+2].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter2 = day_adjuster(diamondCounter1,stringOfEvents,rWselectiveColoum)
     
 
 elif day_name[day] == "Wednesday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[19].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,2)
+    selectiveColoum = str(coloumsOfData[dataPicker+2].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter2 = day_adjuster(diamondCounter1,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
-    selectiveColoum = str(coloumsOfData[20].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,3)
+    selectiveColoum = str(coloumsOfData[dataPicker+3].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter3 = day_adjuster(diamondCounter2,stringOfEvents,rWselectiveColoum)
     
 
 elif day_name[day] == "Thursday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[19].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,2)
+    selectiveColoum = str(coloumsOfData[dataPicker+2].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter2 = day_adjuster(diamondCounter1,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[20].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,3)
+    selectiveColoum = str(coloumsOfData[dataPicker+3].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter3 = day_adjuster(diamondCounter2,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
-    selectiveColoum = str(coloumsOfData[21].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,4)
+    selectiveColoum = str(coloumsOfData[dataPicker+4].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter4 = day_adjuster(diamondCounter3,stringOfEvents,rWselectiveColoum)
     
 
 elif day_name[day] == "Friday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[19].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,2)
+    selectiveColoum = str(coloumsOfData[dataPicker+2].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter2 = day_adjuster(diamondCounter1,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[20].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,3)
+    selectiveColoum = str(coloumsOfData[dataPicker+3].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter3 = day_adjuster(diamondCounter2,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[21].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,4)
+    selectiveColoum = str(coloumsOfData[dataPicker+4].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter4 = day_adjuster(diamondCounter3,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
-    selectiveColoum = str(coloumsOfData[22].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,5)
+    selectiveColoum = str(coloumsOfData[dataPicker+5].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter5 = day_adjuster(diamondCounter4,stringOfEvents,rWselectiveColoum)
     
 
 elif day_name[day] == "Saturday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[19].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,2)
+    selectiveColoum = str(coloumsOfData[dataPicker+2].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter2 = day_adjuster(diamondCounter1,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[20].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,3)
+    selectiveColoum = str(coloumsOfData[dataPicker+3].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter3 = day_adjuster(diamondCounter2,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[21].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,4)
+    selectiveColoum = str(coloumsOfData[dataPicker+4].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter4 = day_adjuster(diamondCounter3,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[22].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,5)
+    selectiveColoum = str(coloumsOfData[dataPicker+5].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter5 = day_adjuster(diamondCounter4,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
-    selectiveColoum = str(coloumsOfData[23].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,6)
+    selectiveColoum = str(coloumsOfData[dataPicker+6].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter6 = day_adjuster(diamondCounter5, stringOfEvents,rWselectiveColoum)
@@ -556,7 +613,7 @@ elif day_name[day] == "Saturday":
 
 else:
 	#This is Sunday But need to get access to a preList of Saturday!!
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
@@ -566,6 +623,8 @@ if type(listOfTEvents) == tuple:
     listOfTEvents = listOfTEvents[0]
 
 runLoopForEvents = len(listOfTEvents)
+
+
 
 for i in range(runLoopForEvents):
 	if "TurtleClub-Diamond#1" in listOfTEvents[listCounter]:
@@ -615,6 +674,7 @@ for i in range(runLoopForEvents):
 	else:
 		listCounter = listCounter + 1
 
+
 diamondOneMound, diamondOneBase = league_organizer(diamondOneEvents,diamondOneMound,diamondOneBase)
 
 diamondTwoMound, diamondTwoBase = league_organizer(diamondTwoEvents,diamondTwoMound,diamondTwoBase)
@@ -634,76 +694,7 @@ vDiamondOneMound, vDiamondOneBase = league_organizer(villanovaOneEvents,vDiamond
 vDiamondTwoMound, vDiamondTwoBase = league_organizer(villanovaTwoEvents,vDiamondTwoMound,vDiamondTwoBase)
 
 #Start writing the pre statements for the funciton league orgainzer
-listCounter  = 0
-runLoopForEvents = len(preList)
-for z in range(runLoopForEvents):
 
-    if "TurtleClub-Diamond#1" in preList[listCounter]:
-        preDiamondOneEvents.append(preList[listCounter])
-        listCounter = listCounter + 1
-        
-    elif "TurtleClub-Diamond#2" in preList[listCounter]:
-        preDiamondTwoEvents.append(preList[listCounter])
-        listCounter = listCounter + 1
-        
-
-    elif "TurtleClub-Diamond#3" in preList[listCounter]:
-        preDiamondThreeEvents.append(preList[listCounter])
-        listCounter = listCounter + 1
-        
-
-    elif "TurtleClub-Diamond#4" in preList[listCounter]:
-        preDiamondFourEvents.append(preList[listCounter])
-        listCounter = listCounter + 1
-        
-
-    elif "TurtleClub-Diamond#5" in preList[listCounter]:
-        preDiamondFiveEvents.append(preList[listCounter])
-        listCounter = listCounter + 1
-        
-
-    elif "TurtleClub-Diamond#6" in preList[listCounter]:
-        preDiamondSixEvents.append(preList[listCounter])
-        listCounter = listCounter + 1
-        
-
-    elif "TurtleClub-Diamond#7" in preList[listCounter]:
-        preDiamondSevenEvents.append(preList[listCounter])
-        listCounter = listCounter + 1
-        
-
-	#Villy Diamond 1 is the bigger Diamond
-    elif "Villanova-Diamond#1" in preList[listCounter]:
-        preVDiamondOneEvents.append(preList[listCounter])
-        listCounter = listCounter + 1
-        
-
-    elif "Villanova-Diamond#2" in preList[listCounter]:
-        preVDiamondTwoEvents.append(preList[listCounter])
-        listCounter = listCounter + 1
-        
-    else:
-        listCounter = listCounter + 1
-        
-
-
-preDiamondOneMound, preDiamondOneBase = league_organizer(preDiamondOneEvents, preDiamondOneMound, preDiamondOneBase)
-
-preDiamondTwoMound, preDiamondTwoBase = league_organizer(preDiamondTwoEvents, preDiamondTwoMound, preDiamondTwoBase)
-
-preDiamondThreeMound, preDiamondThreeBase = league_organizer(preDiamondThreeEvents, preDiamondThreeMound, preDiamondThreeBase)
-
-preDiamondFourMound, preDiamondFourBase = league_organizer(preDiamondFourEvents, preDiamondFourMound, preDiamondFourBase)
-
-preDiamondFiveMound, preDiamondFiveBase = league_organizer(preDiamondFiveEvents, preDiamondFiveMound, preDiamondFiveBase)
-
-preDiamondSixMound, preDiamondSixBase = league_organizer(preDiamondSixEvents, preDiamondSixMound, preDiamondSixBase)
-
-preDiamondSevenMound, preDiamondSevenBase = league_organizer(preDiamondSevenEvents, preDiamondSevenMound, preDiamondSevenBase)
-
-preVDiamondOneMound, preVDiamondOneBase = league_organizer(preVDiamondOneEvents, preVDiamondOneMound, preVDiamondOneBase)
-
-preVDiamondTwoMound, preVDiamondTwoBase = league_organizer(preVDiamondTwoEvents, preVDiamondTwoMound, preVDiamondTwoBase)
 
 diamondTimeOne = time_keeper(diamondOneEvents)
 diamondTimeTwo = time_keeper(diamondTwoEvents)
@@ -715,6 +706,7 @@ diamondTimeSeven = time_keeper(diamondSevenEvents)
 diamondTimeVOne = time_keeper(villanovaOneEvents)
 diamondTimeVTwo = time_keeper(villanovaTwoEvents)
 
+
 diamondOneEvents = [diamondOneEvents.replace("TurtleClub-Diamond#1", "") for diamondOneEvents in diamondOneEvents] 
 diamondTwoEvents = [diamondTwoEvents.replace("TurtleClub-Diamond#2", "") for diamondTwoEvents in diamondTwoEvents]  
 diamondThreeEvents = [diamondThreeEvents.replace("TurtleClub-Diamond#3", "") for diamondThreeEvents in diamondThreeEvents] 
@@ -724,6 +716,7 @@ diamondSixEvents = [diamondSixEvents.replace("TurtleClub-Diamond#6", "") for dia
 diamondSevenEvents = [diamondSevenEvents.replace("TurtleClub-Diamond#7", "") for diamondSevenEvents in diamondSevenEvents] 
 villanovaOneEvents = [villanovaOneEvents.replace("Villanova-Diamond#1","") for villanovaOneEvents in villanovaOneEvents]
 villanovaTwoEvents = [villanovaTwoEvents.replace("Villanova-Diamond#2","") for villanovaTwoEvents in villanovaTwoEvents]
+
 
 diamondOneEvents = game_upper(diamondOneEvents)
 diamondTwoEvents = game_upper(diamondTwoEvents)
@@ -735,6 +728,8 @@ diamondSevenEvents = game_upper(diamondSevenEvents)
 villanovaOneEvents = game_upper(villanovaOneEvents)
 villanovaTwoEvents = game_upper(villanovaTwoEvents)
 
+
+
 diamondOneEvents = practice_lower(diamondOneEvents)
 diamondTwoEvents = practice_lower(diamondTwoEvents)
 diamondThreeEvents = practice_lower(diamondThreeEvents)
@@ -744,6 +739,8 @@ diamondSixEvents = practice_lower(diamondSixEvents)
 diamondSevenEvents = practice_lower(diamondSevenEvents)
 villanovaOneEvents = practice_lower(villanovaOneEvents)
 villanovaTwoEvents = practice_lower(villanovaTwoEvents)
+
+
 
 diamondOneEvents = [diamondOneEvents.replace("Practice", "") for diamondOneEvents in diamondOneEvents] 
 diamondTwoEvents = [diamondTwoEvents.replace("Practice", "") for diamondTwoEvents in diamondTwoEvents]  
@@ -767,6 +764,7 @@ caption4 = "Today's Schedule Cont'd"
 
 
 
+
 dOne,dOne2,dOne3,dOne4 = newTupleLogic(diamondTimeOne,diamondOneMound,diamondOneBase,"1",diamondOneEvents)
 dTwo,dTwo2, dTwo3,dTwo4 = newTupleLogic(diamondTimeTwo,diamondTwoMound,diamondTwoBase,"2",diamondTwoEvents)
 dThree,dThree2,dThree3,dThree4 = newTupleLogic(diamondTimeThree,diamondThreeMound,diamondThreeBase,"3",diamondThreeEvents)
@@ -776,6 +774,8 @@ dSix,dSix2,dSix3,dSix4 = newTupleLogic(diamondTimeSix,diamondSixMound,diamondSix
 dSeven,dSeven2,dSeven3,dSeven4 = newTupleLogic(diamondTimeSeven,diamondSevenMound,diamondSevenBase,"7",diamondSevenEvents)
 dVOne,dVOne2,dVOne3,dVOne4 = newTupleLogic(diamondTimeVOne,vDiamondOneMound,vDiamondOneBase,"V1",villanovaOneEvents)
 dVTwo,dVTwo2,dVTwo3,dVTwo4 = newTupleLogic(diamondTimeVTwo,vDiamondTwoMound,vDiamondTwoBase,"V2",villanovaTwoEvents)
+
+
 
 cC1 = (
     (dOne[0],dOne[1],dOne[2],dOne[3],dOne[4]),
@@ -788,6 +788,7 @@ cC1 = (
     (dVOne[0],dVOne[1],dVOne[2],dVOne[3],dVOne[4]),
     (dVTwo[0],dVTwo[1],dVTwo[2],dVTwo[3],dVTwo[4]),
 )
+
 
 cC2 = (
     (dOne2[0],dOne2[1],dOne2[2],dOne2[3],dOne2[4]),
@@ -904,6 +905,21 @@ vDiamondOneBase = []
 vDiamondTwoBase = []
 
 
+dataPicker = 1
+if len(coloumsOfData[17].text) > 1000:
+    dataPicker = 17
+    
+else:
+    while True:
+        
+        comp = coloumsOfData[17+dataPicker].text
+        if len(comp) > 1000 and "Turtle Club" in comp and "Diamond" in comp :
+            break
+        
+        dataPicker = dataPicker+1
+        
+dataPicker = dataPicker + 17 
+
 
 dayChange = 0
 
@@ -913,133 +929,156 @@ else:
     day = day + 1
 
 if day_name[day] == "Monday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
     preDiamondOneEvents, preDiamondTwoEvents, preDiamondThreeEvents, preDiamondFourEvents, preDiamondFiveEvents, preDiamondSixEvents, preDiamondSevenEvents, preVDiamondOneEvents, preVDiamondTwoEvents = preList_DiamondOrganizer(preList)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
+
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
     
+    
 
 elif day_name[day] == "Tuesday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
-    selectiveColoum = str(coloumsOfData[19].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,2)
+    selectiveColoum = str(coloumsOfData[dataPicker+2].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter2 = day_adjuster(diamondCounter1,stringOfEvents,rWselectiveColoum)
     
 
 elif day_name[day] == "Wednesday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[19].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,2)
+    selectiveColoum = str(coloumsOfData[dataPicker+2].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter2 = day_adjuster(diamondCounter1,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
-    selectiveColoum = str(coloumsOfData[20].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,3)
+    selectiveColoum = str(coloumsOfData[dataPicker+3].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter3 = day_adjuster(diamondCounter2,stringOfEvents,rWselectiveColoum)
     
 
 elif day_name[day] == "Thursday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[19].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,2)
+    selectiveColoum = str(coloumsOfData[dataPicker+2].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter2 = day_adjuster(diamondCounter1,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[20].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,3)
+    selectiveColoum = str(coloumsOfData[dataPicker+3].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter3 = day_adjuster(diamondCounter2,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
-    selectiveColoum = str(coloumsOfData[21].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,4)
+    selectiveColoum = str(coloumsOfData[dataPicker+4].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter4 = day_adjuster(diamondCounter3,stringOfEvents,rWselectiveColoum)
     
 
 elif day_name[day] == "Friday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[19].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,2)
+    selectiveColoum = str(coloumsOfData[dataPicker+2].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter2 = day_adjuster(diamondCounter1,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[20].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,3)
+    selectiveColoum = str(coloumsOfData[dataPicker+3].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter3 = day_adjuster(diamondCounter2,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[21].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,4)
+    selectiveColoum = str(coloumsOfData[dataPicker+4].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter4 = day_adjuster(diamondCounter3,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
-    selectiveColoum = str(coloumsOfData[22].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,5)
+    selectiveColoum = str(coloumsOfData[dataPicker+5].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter5 = day_adjuster(diamondCounter4,stringOfEvents,rWselectiveColoum)
     
 
 elif day_name[day] == "Saturday":
-    selectiveColoum = str(coloumsOfData[17].text)
+    selectiveColoum = str(coloumsOfData[dataPicker].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[18].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,1)
+    selectiveColoum = str(coloumsOfData[dataPicker+1].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter1 = day_adjuster(diamondCounter,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[19].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,2)
+    selectiveColoum = str(coloumsOfData[dataPicker+2].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter2 = day_adjuster(diamondCounter1,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[20].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,3)
+    selectiveColoum = str(coloumsOfData[dataPicker+3].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter3 = day_adjuster(diamondCounter2,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[21].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,4)
+    selectiveColoum = str(coloumsOfData[dataPicker+4].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter4 = day_adjuster(diamondCounter3,stringOfEvents,rWselectiveColoum)
-    selectiveColoum = str(coloumsOfData[22].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,5)
+    selectiveColoum = str(coloumsOfData[dataPicker+5].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter5 = day_adjuster(diamondCounter4,stringOfEvents,rWselectiveColoum)
     preList = listOfTEvents
-    selectiveColoum = str(coloumsOfData[23].text)
+    dataPicker = intermitten_data_picker(dataPicker,coloumsOfData,6)
+    selectiveColoum = str(coloumsOfData[dataPicker+6].text)
     rWselectiveColoum = selectiveColoum.replace(" ", "")
     listOfTEvents = []
     listOfTEvents, diamondCounter6 = day_adjuster(diamondCounter5, stringOfEvents,rWselectiveColoum)
@@ -1054,29 +1093,44 @@ else:
     if int(date[0:1]) == 0:
         
         dayForUrl = int(date[1:2]) 
-        dayForUrl = dayForUrl+1
+        dayForUrl = dayForUrl+4
         
     else:
         dayForUrl = int(date[0:2])
-        dayForUrl = dayForUrl+1
-        
+        dayForUrl = dayForUrl+4
+    
     monthForUrl = int(date[4:5])
     dayForUrl = str(dayForUrl)
     monthForUrl = str(monthForUrl)
     newCompleteUrl = newUrlPtOne+dayForUrl+newUrlPtTwo+monthForUrl+newUrlPtThree
     
     r2 = requests.get(newCompleteUrl)
-    soup2 = BeautifulSoup(r.text,'html.parser')
-    
-    stringOfE = soup.find_all('div', attrs = {'class':'calItem'})
-    cOD = soup.find_all('td',attrs = {})
-   
-    selectiveC = str(cOD[17].text)
+    soup2 = BeautifulSoup(r2.text,'html.parser')
+    stringOfE = soup2.find_all('div', attrs = {'class':'calItem'})
+    cOD = soup2.find_all('td',attrs = {})
 
+    dataPicker = 1
+    if len(cOD[17].text) > 1000:
+        dataPicker = 17
+    
+    else:
+        while True:
+        
+            comp = cOD[17+dataPicker].text
+            if len(comp) > 1000 and "Turtle Club" in comp and "Diamond" in comp :
+                break
+        
+            dataPicker = dataPicker+1
+        
+    dataPicker = dataPicker + 17 
+
+
+    selectiveC = str(cOD[dataPicker].text)
+    
     rWselectiveC = selectiveC.replace(" ","")
     listOfTEvents = []
     listOfTEvents,diamondCounter = day_adjuster(diamondCounter,stringOfE,rWselectiveC)
-
+    
     
 
 
